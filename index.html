@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Grade Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Student Grade Calculator</h1>
+    <form id="gradeForm">
+      <div id="subjects">
+        <input type="number" placeholder="Enter marks for Subject 1" class="mark" min="0" max="100" required />
+        <input type="number" placeholder="Enter marks for Subject 2" class="mark" min="0" max="100" required />
+        <input type="number" placeholder="Enter marks for Subject 3" class="mark" min="0" max="100" required />
+        <input type="number" placeholder="Enter marks for Subject 4" class="mark" min="0" max="100" required />
+        <input type="number" placeholder="Enter marks for Subject 5" class="mark" min="0" max="100" required />
+      </div>
+      <button type="submit">Calculate Grade</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>Result</h2>
+      <p>Total Marks: <span id="total"></span></p>
+      <p>Average Percentage: <span id="average"></span>%</p>
+      <p>Grade: <span id="grade"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
